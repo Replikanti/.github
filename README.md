@@ -127,7 +127,23 @@ Interactive visualization of technological evolution from basic logic gates to h
 
 We accept project requests and software development commissions through GitHub Issues. Whether you need infrastructure setup, trading automation, workflow optimization, or custom web development, we're here to help.
 
-**[Submit a Project Request →](../../issues/new/choose)**
+### Submit a Project Request
+
+Use our GitHub issue templates to get started:
+
+- **[Project Request](../../issues/new?template=project-request.yml)** - Commission new software development or customization
+- **[Bug Report](../../issues/new?template=bug-report.yml)** - Report issues with existing projects
+- **[Feature Request](../../issues/new?template=feature-request.yml)** - Suggest enhancements to our projects
+
+Or **[browse all options →](../../issues/new/choose)**
+
+### What to Expect
+
+1. **Initial Response**: We'll review your request within 24-48 hours
+2. **Discovery Call**: We'll schedule a discussion to understand your needs
+3. **Proposal**: You'll receive a detailed proposal with timeline and pricing
+4. **Development**: Transparent, iterative development with regular updates
+5. **Delivery**: Complete handoff with documentation and support
 
 ## Contact
 

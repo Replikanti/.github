@@ -1,0 +1,155 @@
+name: Project Request
+description: Submit a request for software development or customization services
+title: "[PROJECT]: "
+labels: ["project-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in working with Replikanti! Please fill out this form to help us understand your project requirements.
+
+  - type: dropdown
+    id: project-type
+    attributes:
+      label: Project Type
+      description: What type of project are you interested in?
+      options:
+        - Cloud Infrastructure & DevOps
+        - Trading Automation
+        - Workflow Automation
+        - Full-Stack Web Development
+        - Browser Extension
+        - API Development & Integration
+        - Other (please specify below)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project-scope
+    attributes:
+      label: Project Scope
+      description: What is the estimated scope of this project?
+      options:
+        - Small (1-2 weeks)
+        - Medium (2-4 weeks)
+        - Large (1-3 months)
+        - Enterprise (3+ months)
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: Please describe your project requirements in detail
+      placeholder: |
+        What do you want to build or improve?
+        What problem are you trying to solve?
+        What are the key features you need?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tech-stack
+    attributes:
+      label: Technology Preferences
+      description: Do you have any specific technology requirements or preferences?
+      placeholder: |
+        - Programming languages
+        - Frameworks
+        - Cloud providers (AWS, Azure, GCP)
+        - Databases
+        - Third-party APIs or services
+    validations:
+      required: false
+
+  - type: textarea
+    id: existing-systems
+    attributes:
+      label: Existing Systems
+      description: Do you have any existing systems or infrastructure we should integrate with?
+      placeholder: |
+        Please describe your current setup if applicable
+    validations:
+      required: false
+
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Timeline
+      description: When would you like to start and complete this project?
+      options:
+        - Immediately
+        - Within 1 month
+        - Within 3 months
+        - Within 6 months
+        - Flexible / TBD
+    validations:
+      required: true
+
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Budget Range
+      description: What is your approximate budget for this project?
+      options:
+        - "$1,000 - $5,000"
+        - "$5,000 - $10,000"
+        - "$10,000 - $25,000"
+        - "$25,000 - $50,000"
+        - "$50,000+"
+        - "Prefer to discuss"
+    validations:
+      required: true
+
+  - type: input
+    id: contact-name
+    attributes:
+      label: Contact Name
+      description: Your name or company name
+      placeholder: "John Doe / Acme Corp"
+    validations:
+      required: true
+
+  - type: input
+    id: contact-email
+    attributes:
+      label: Contact Email
+      description: Best email to reach you at
+      placeholder: "email@example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: contact-other
+    attributes:
+      label: Additional Contact Info (Optional)
+      description: Phone number, Slack, Discord, or other preferred communication method
+      placeholder: "+1-555-0100 or @username on Slack"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Anything else you'd like us to know?
+      placeholder: |
+        - Special requirements
+        - Compliance needs (GDPR, HIPAA, etc.)
+        - Documentation requirements
+        - Support and maintenance expectations
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgment
+      description: Please confirm the following
+      options:
+        - label: I understand this is a project inquiry and not a guarantee of service
+          required: true
+        - label: I agree to discuss project details and pricing with the Replikanti team
+          required: true

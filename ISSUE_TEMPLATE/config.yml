@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email Contact
+    url: mailto:ylohnitram@gmail.com
+    about: Send us an email for quick questions or inquiries
+  - name: Corporate Website
+    url: https://replikanti.xyz
+    about: Visit our website to learn more about Replikanti
+  - name: GitHub Discussions
+    url: https://github.com/orgs/Replikanti/discussions
+    about: Join community discussions and ask questions
