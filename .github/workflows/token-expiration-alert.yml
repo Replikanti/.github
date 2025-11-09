@@ -40,50 +40,54 @@ jobs:
           script: |
             const daysUntil = ${{ steps.check.outputs.days_until }};
 
+            const issueBody = [
+              '## ⚠️ Action Required: GitHub Token Expiration',
+              '',
+              `**Fine-grained PAT token expires in ${daysUntil} days** (November 9, 2026)`,
+              '',
+              '### Impact',
+              'The token is used for:',
+              '- Contact form issue creation via Cloudflare Worker',
+              '- Worker URL: `github-issue-proxy.mholy1983.workers.dev`',
+              '',
+              '### How to Renew',
+              '',
+              '1. **Generate new token:**',
+              '   - Go to: https://github.com/settings/tokens?type=beta',
+              '   - Click "Generate new token"',
+              '   - Repository access: `Replikanti/.github`',
+              '   - Permissions: Issues (Read and write)',
+              '   - Expiration: 1 year',
+              '   - Click "Generate token" and copy it',
+              '',
+              '2. **Update Cloudflare Worker:**',
+              '   - Go to: https://dash.cloudflare.com/',
+              '   - Navigate to Workers & Pages → `github-issue-proxy`',
+              '   - Settings → Variables and Secrets',
+              '   - Edit `GITHUB_TOKEN` variable',
+              '   - Paste new token value',
+              '   - Click "Save"',
+              '',
+              '3. **Test the contact form:**',
+              '   - Visit: https://replikanti.xyz/contact.html?type=project',
+              '   - Submit a test issue',
+              '   - Verify it creates successfully',
+              '',
+              '4. **Close this issue** after renewal is complete',
+              '',
+              '---',
+              '*This alert is triggered automatically 30 days before expiration.*'
+            ].join('\n');
+
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: '🚨 GitHub PAT Token Expiring Soon',
-              body: `## ⚠️ Action Required: GitHub Token Expiration
-
-**Fine-grained PAT token expires in ${daysUntil} days** (November 9, 2026)
-
-### Impact
-The token is used for:
-- Contact form issue creation via Cloudflare Worker
-- Worker URL: \`github-issue-proxy.mholy1983.workers.dev\`
-
-### How to Renew
-
-1. **Generate new token:**
-   - Go to: https://github.com/settings/tokens?type=beta
-   - Click "Generate new token"
-   - Repository access: \`Replikanti/.github\`
-   - Permissions: Issues (Read and write)
-   - Expiration: 1 year
-   - Click "Generate token" and copy it
-
-2. **Update Cloudflare Worker:**
-   - Go to: https://dash.cloudflare.com/
-   - Navigate to Workers & Pages → \`github-issue-proxy\`
-   - Settings → Variables and Secrets
-   - Edit \`GITHUB_TOKEN\` variable
-   - Paste new token value
-   - Click "Save"
-
-3. **Test the contact form:**
-   - Visit: https://replikanti.xyz/contact.html?type=project
-   - Submit a test issue
-   - Verify it creates successfully
-
-4. **Close this issue** after renewal is complete
-
----
-*This alert is triggered automatically 30 days before expiration.*`,
+              body: issueBody,
               labels: ['alert', 'maintenance']
             });
 
-            console.log(\`Created issue #\${issue.data.number}\`);
+            console.log(`Created issue #${issue.data.number}`);
 
       - name: Send Email Alert
         if: steps.check.outputs.should_alert == 'true'
