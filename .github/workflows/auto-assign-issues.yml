@@ -21,3 +21,25 @@ jobs:
               issue_number: context.issue.number,
               assignees: ['ylohnitram']
             });
+
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.ALERT_EMAIL_USER }}
+          password: ${{ secrets.ALERT_EMAIL_PASSWORD }}
+          subject: "New Issue: ${{ github.event.issue.title }}"
+          to: mholy1983@gmail.com
+          from: GitHub Notifications
+          body: |
+            A new issue has been opened in ${{ github.repository }}
+
+            Title: ${{ github.event.issue.title }}
+            Number: #${{ github.event.issue.number }}
+            Author: @${{ github.event.issue.user.login }}
+            URL: ${{ github.event.issue.html_url }}
+
+            ---
+            ${{ github.event.issue.body }}
