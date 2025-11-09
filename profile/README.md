@@ -129,13 +129,13 @@ We accept project requests and software development commissions through GitHub I
 
 ### Submit a Project Request
 
-Use our GitHub issue templates to get started:
+Use our contact form to get started (no GitHub account required):
 
-- **[Project Request](../../issues/new?template=project-request.yml)** - Commission new software development or customization
-- **[Bug Report](../../issues/new?template=bug-report.yml)** - Report issues with existing projects
-- **[Feature Request](../../issues/new?template=feature-request.yml)** - Suggest enhancements to our projects
+- **[Project Request](https://replikanti.xyz/contact.html?type=project)** - Commission new software development or customization
+- **[Bug Report](https://replikanti.xyz/contact.html?type=bug)** - Report issues with existing projects
+- **[Feature Request](https://replikanti.xyz/contact.html?type=feature)** - Suggest enhancements to our projects
 
-Or **[browse all options →](../../issues/new/choose)**
+Or **[browse all options →](https://replikanti.xyz/contact.html)**
 
 ### What to Expect
 
