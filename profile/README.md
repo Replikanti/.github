@@ -1,155 +1,54 @@
-# Replikanti
+<div align="center">
 
-> Building autonomous, self-improving systems powered by AI
+<img src="https://raw.githubusercontent.com/Replikanti/.github/main/profile/assets/banner.svg" alt="Replikanti, autonomous agents, market research and web3 security" width="100%">
 
-## About Us
+[![Website](https://img.shields.io/badge/Web-replikanti.dev-1e2329?style=flat-square&logo=googlechrome&logoColor=white)](https://replikanti.dev)
+[![Email](https://img.shields.io/badge/Mail-ylohnitram%40gmail.com-1e2329?style=flat-square&logo=gmail&logoColor=white)](mailto:ylohnitram@gmail.com)
+[![Agentis](https://img.shields.io/badge/Agentis-agent_runtime-0ecb81?style=flat-square)](https://github.com/Replikanti/agentis)
+[![MIE](https://img.shields.io/badge/MIE-BTC_research-F7931A?style=flat-square&logo=bitcoin&logoColor=white)](https://github.com/Replikanti/mie)
 
-Replikanti is an innovative technology organization specializing in automation, AI-powered infrastructure, and intelligent trading solutions. We design and build autonomous systems that evolve, adapt, and manage themselves with minimal human intervention.
+</div>
 
-Our mission is to create practical, production-ready solutions that leverage cutting-edge technologies while maintaining cost-efficiency and reliability.
+Replikanti builds autonomous agents that do real engineering work, and the tools that let them run unattended. We make an open-core agent runtime, agent federations that take issues to merged pull requests and hunt for smart contract bugs, a harness for driving LLM command line tools, and research software for the BTC perpetual market. Based in Prague.
 
-## What We Do
+```text
+issue → scout → plan → implement → review → qa → merge
+```
 
-### Cloud Infrastructure & DevOps
-We build self-managing, cost-optimized cloud infrastructure using industry-leading practices:
-- **Infrastructure as Code** with AWS CDK
-- **Production-grade security** with AWS Secrets Manager, SSL/TLS, and IAM
-- **Auto-scaling and high availability** with ECS and CloudFront
-- **Cost optimization** strategies for startups and enterprises
-- **CI/CD pipelines** and automated deployments
+Measure first. A model tier, a bug hunting technique or a trading rule stays only when a benchmark or an out-of-sample test shows that it pays off. Our agents work through issues, pull requests and CI like any other contributor.
 
-### Trading Automation
-We develop intelligent trading tools that connect various platforms and exchanges:
-- **ChartBridge**: Browser extension for seamless TradingView to Binance Futures integration
-- **Risk management** with intelligent position sizing and bracket orders
-- **Real-time execution** with low-latency API integrations
-- **Multi-currency support** and automatic precision handling
+### What we build
 
-### Workflow Automation
-We deploy and customize automation platforms for business process optimization:
-- **n8n workflow automation** platform deployment and configuration
-- **Multi-API orchestration** (GitHub, Slack, Notion, OpenAI)
-- **Custom workflow development** for your specific needs
-- **AI agent integration** with Model Context Protocol (MCP)
+| Project | Area | What it is |
+|---|---|---|
+| [**Agentis**](https://github.com/Replikanti/agentis) | `agent runtime` | Open-core platform for autonomous agents. Rust runtime, agent DSL and evolution engine, with capability-based security and cognitive budgets. |
+| [**Agentis Colonies**](https://github.com/Replikanti/agentis-colonies) | `agent federations` | Ready-to-run federations under Apache 2.0. A development colony that takes issues to merged PRs, protocol monitoring and security research. |
+| [**dark-factory**](https://github.com/Replikanti/agentis-colonies/tree/main/dark-factory) | `web3 security` | Autonomous security research federation. Invariant fuzzing, symbolic execution with Halmos and fork-state verification. Active on Immunefi and Sherlock. |
+| [**MIE**](https://github.com/Replikanti/mie) | `btc perps` | Market Intelligence Engine for the BTCUSDT perpetual, in Rust. Maps market state, regime and order flow, measures how the market behaves in each context, and only then looks for strategies. |
+| [**flat-cyborg**](https://github.com/Replikanti/flat-cyborg) | `llm cli harness` | PTY harness for driving LLM command line tools such as Claude Code from scripts and daemons, in Rust. |
+| [**sdlc-bench**](https://github.com/Replikanti/sdlc-bench) | `benchmark` | Finds the cheapest model and effort tier that still passes, for each class of engineering task. |
 
-### Full-Stack Development
-We deliver modern, responsive web applications and browser extensions:
-- **Backend APIs** using Python/FastAPI and Node.js/TypeScript
-- **Frontend development** with modern HTML5, CSS3, and JavaScript
-- **Chrome extensions** with Manifest V3
-- **Static websites** and marketing pages
-- **Interactive visualizations** and data-driven applications
+### Stack
 
-## Our Technology Stack
+```yaml
+languages:  Rust, Agentis (.ag), TypeScript, Python, Bash
+agents:     agent runtime, multi-agent federations, Claude Code automation
+markets:    Binance USDⓈ-M futures, deterministic replay, Parquet
+security:   Foundry invariant fuzzing, Halmos symbolic execution, EVM, Solana
+infra:      GitHub Actions, Docker, Terraform
+```
 
-**Languages & Frameworks**
-- Python, TypeScript, JavaScript, Node.js
-- FastAPI, Express.js
-- HTML5, CSS3
+### Earlier work
 
-**Cloud & Infrastructure**
-- AWS (ECS, EC2, RDS, S3, CloudFront, Route53, Secrets Manager)
-- Docker & Docker Compose
-- PostgreSQL, Redis
-- n8n automation platform
+| Project | Period | What it was |
+|---|---|---|
+| [Ralph Platform](https://github.com/Replikanti/ralph-platform) | 01/2026 – 03/2026 | Digital labor automation platform built with AI-augmented engineering |
+| [FlowLint](https://flowlint.dev) | 11/2025 – 03/2026 | Open-source static analysis suite for n8n with a linting engine, CLI, GitHub App and Chrome extension |
 
-**APIs & Integrations**
-- Binance Futures Trading API
-- OpenAI API
-- GitHub, Notion, Slack APIs
-- Model Context Protocol (MCP)
+### Work with us
 
-**Development Tools**
-- Projen, Jest, ESLint
-- GitHub Actions
-- AWS CDK
-
-## Our Projects
-
-### AWS Infrastructure as Code
-Self-building AI company infrastructure deployed on AWS ECS with n8n automation, PostgreSQL database, and CloudFront distribution. Features custom MCP Tool node integration for AI interactions.
-
-**Repository**: [aws-iac](https://github.com/Replikanti/aws-iac)
-
-### ChartBridge
-Complete trading automation solution connecting TradingView to Binance Futures with intelligent risk management and bracket orders.
-
-- **Backend**: [chartbridge-backend](https://github.com/Replikanti/chartbridge-backend)
-- **Extension**: [chartbridge-extension](https://github.com/Replikanti/chartbridge-extension)
-- **Website**: [chartbridge-web](https://github.com/Replikanti/chartbridge-web)
-
-### Corporate Website
-Interactive visualization of technological evolution from basic logic gates to human-level AI, demonstrating our philosophy of self-building, self-improving systems.
-
-**Repository**: [corporate-web](https://github.com/Replikanti/corporate-web)
-**Website**: [replikanti.dev](https://replikanti.dev)
-
-## Our Values
-
-- **Autonomy**: Building self-managing, self-improving systems
-- **Automation**: Reducing human intervention through intelligent tools
-- **Innovation**: Exploring cutting-edge technologies while delivering practical solutions
-- **Pragmatism**: Cost-effective, production-ready implementations
-- **Evolution**: Continuous improvement from simple to complex systems
-
-## Services We Offer
-
-### Infrastructure Development
-- Cloud architecture design and implementation
-- Infrastructure as Code (AWS CDK, Terraform)
-- DevOps automation and CI/CD pipelines
-- Cost optimization and monitoring
-- Security hardening and compliance
-
-### Trading Solutions
-- Custom trading bots and automation tools
-- API integrations with major exchanges
-- Risk management systems
-- Real-time data processing and analysis
-- Backtesting and strategy development
-
-### Automation Platforms
-- n8n deployment and customization
-- Workflow automation design
-- Multi-service orchestration
-- API integration and development
-- AI agent development
-
-### Web Development
-- Full-stack web applications
-- Browser extensions (Chrome, Firefox)
-- Static websites and landing pages
-- API development and integration
-- Responsive UI/UX design
-
-## How to Work With Us
-
-We accept project requests and software development commissions through GitHub Issues. Whether you need infrastructure setup, trading automation, workflow optimization, or custom web development, we're here to help.
-
-### Submit a Project Request
-
-Use our contact form to get started (no GitHub account required):
-
-- **[Project Request](https://replikanti.dev/contact.html?type=project)** - Commission new software development or customization
-- **[Bug Report](https://replikanti.dev/contact.html?type=bug)** - Report issues with existing projects
-- **[Feature Request](https://replikanti.dev/contact.html?type=feature)** - Suggest enhancements to our projects
-
-Or **[browse all options →](https://replikanti.dev/contact.html)**
-
-### What to Expect
-
-1. **Initial Response**: We'll review your request within 24-48 hours
-2. **Discovery Call**: We'll schedule a discussion to understand your needs
-3. **Proposal**: You'll receive a detailed proposal with timeline and pricing
-4. **Development**: Transparent, iterative development with regular updates
-5. **Delivery**: Complete handoff with documentation and support
-
-## Contact
-
-- **GitHub**: [@Replikanti](https://github.com/Replikanti)
-- **Email**: ylohnitram@gmail.com
-- **Website**: [replikanti.dev](https://replikanti.dev)
+We take on work in agent automation, trading infrastructure and security research. Write to us through the [contact form](https://replikanti.dev/contact.html) or at ylohnitram@gmail.com.
 
 ---
 
-Built with a vision of autonomous, evolving systems that manage themselves and continuously improve.
+<div align="center"><sub>build the agents · measure what they do · ship what survives</sub></div>
