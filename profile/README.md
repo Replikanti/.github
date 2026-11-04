@@ -77,13 +77,12 @@ Complete trading automation solution connecting TradingView to Binance Futures w
 - **Backend**: [chartbridge-backend](https://github.com/Replikanti/chartbridge-backend)
 - **Extension**: [chartbridge-extension](https://github.com/Replikanti/chartbridge-extension)
 - **Website**: [chartbridge-web](https://github.com/Replikanti/chartbridge-web)
-- **Live Demo**: [chartbridge.replikanti.xyz](https://chartbridge.replikanti.xyz)
 
 ### Corporate Website
 Interactive visualization of technological evolution from basic logic gates to human-level AI, demonstrating our philosophy of self-building, self-improving systems.
 
 **Repository**: [corporate-web](https://github.com/Replikanti/corporate-web)
-**Website**: [replikanti.xyz](https://replikanti.xyz)
+**Website**: [replikanti.dev](https://replikanti.dev)
 
 ## Our Values
 
@@ -131,11 +130,11 @@ We accept project requests and software development commissions through GitHub I
 
 Use our contact form to get started (no GitHub account required):
 
-- **[Project Request](https://replikanti.xyz/contact.html?type=project)** - Commission new software development or customization
-- **[Bug Report](https://replikanti.xyz/contact.html?type=bug)** - Report issues with existing projects
-- **[Feature Request](https://replikanti.xyz/contact.html?type=feature)** - Suggest enhancements to our projects
+- **[Project Request](https://replikanti.dev/contact.html?type=project)** - Commission new software development or customization
+- **[Bug Report](https://replikanti.dev/contact.html?type=bug)** - Report issues with existing projects
+- **[Feature Request](https://replikanti.dev/contact.html?type=feature)** - Suggest enhancements to our projects
 
-Or **[browse all options →](https://replikanti.xyz/contact.html)**
+Or **[browse all options →](https://replikanti.dev/contact.html)**
 
 ### What to Expect
 
@@ -149,7 +148,7 @@ Or **[browse all options →](https://replikanti.xyz/contact.html)**
 
 - **GitHub**: [@Replikanti](https://github.com/Replikanti)
 - **Email**: ylohnitram@gmail.com
-- **Website**: [replikanti.xyz](https://replikanti.xyz)
+- **Website**: [replikanti.dev](https://replikanti.dev)
 
 ---
 

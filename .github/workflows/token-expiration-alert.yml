@@ -69,7 +69,7 @@ jobs:
               '   - Click "Save"',
               '',
               '3. **Test the contact form:**',
-              '   - Visit: https://replikanti.xyz/contact.html?type=project',
+              '   - Visit: https://replikanti.dev/contact.html?type=project',
               '   - Submit a test issue',
               '   - Verify it creates successfully',
               '',
@@ -103,7 +103,7 @@ jobs:
           body: |
             GitHub Fine-grained PAT token expires in ${{ steps.check.outputs.days_until }} days (November 9, 2026).
 
-            This token is used for the contact form on replikanti.xyz via Cloudflare Worker.
+            This token is used for the contact form on replikanti.dev via Cloudflare Worker.
 
             ACTION REQUIRED:
             1. Check GitHub issue created in Replikanti/.github repository for detailed renewal instructions
